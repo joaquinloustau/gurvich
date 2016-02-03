@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Caveat);
+
+.reveal img.logo {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+.reveal .handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.reveal .logos img {
+  vertical-align: middle;
+}
+
