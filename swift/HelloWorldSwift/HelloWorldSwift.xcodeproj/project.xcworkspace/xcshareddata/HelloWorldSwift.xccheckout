@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F2CFE036-38EC-4A18-B5D4-9404FAFC1188</string>
 	<key>IDESourceControlProjectName</key>
-	<string>HelloWorldSwift</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9B622F117E9B83A7017A548CF28BAD865E88B1C5</key>
 		<string>github.com:joaquinloustau/gurvich.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>swift/HelloWorldSwift/HelloWorldSwift.xcodeproj</string>
+	<string>swift/HelloWorldSwift/HelloWorldSwift.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9B622F117E9B83A7017A548CF28BAD865E88B1C5</key>
