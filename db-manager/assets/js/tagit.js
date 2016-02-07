@@ -37,7 +37,10 @@
             tagLimit          : null,   // Max number of tags allowed (null for unlimited).
 
             // Used for autocomplete, unless you override `autocomplete.source`.
-            availableTags     : ['retratos', 'naturalezas muertas', 'cerro', 'estela medina', 'judaismo'],
+            availableTags     : ['Infancia','TTG', 'Mundo Fantastico', 'El Cerro',
+            'Judaismo e Israel', 'Ceramicas y objetos', 'Nueva York', 'Gurvich y las Artes Escenicas',
+            'Retratos', 'Naturalezas Muertas', 'Taller Gurvich', 'Torres Garcia y companeros', 
+            'Alumnos de Gurvich'],
 
             // Use to override or add any options to the autocomplete widget.
             //
@@ -49,7 +52,7 @@
             showAutocompleteOnFocus: false,
 
             // When enabled, quotes are unneccesary for inputting multi-word tags.
-            allowSpaces: false,
+            allowSpaces: true,
 
             // The below options are for using a single field instead of several
             // for our form values.
