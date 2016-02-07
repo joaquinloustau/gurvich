@@ -2997,6 +2997,8 @@
 				color: #2E3842;
 			}
 
+			.wrapper.style5 input[type="text"].name
+
 			.wrapper.style5 input[type="text"],
 			.wrapper.style5 input[type="password"],
 			.wrapper.style5 input[type="email"],
@@ -3075,6 +3077,10 @@
 
 			.wrapper.style5 table.alt tbody tr td {
 				border-color: #dfdfdf;
+			}
+
+			#notes {
+				height: 120px;
 			}
 
 			.wrapper.style5 input[type="submit"],
