@@ -1,171 +1,120 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Gurvich</title>
-</head>
-
-<body>
-  \ <!--
-    Spectral by HTML5 UP
-    html5up.net | @n33co
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport"><!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/css/login.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel="stylesheet"><!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-  <!-- Page Wrapper -->
+<html>
+	<head>
+		<title>Gurvich</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/login.css" />
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="landing">
 
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-  <div id="page-wrapper">
-    <!-- Header -->
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Gurvich Museum</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+									<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="admin.html">Admin</a></li>
+											<li><a href="admin.html">Guest</a></li>
+											<li><a href="elements.html">Elements</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Museo Gurvich</h2>
+							<ul class="actions">
+								<li><a href="#modal" id="modal_trigger" class="button special">Admin</a></li>
+								<li><a href="guest.html" class="button special">Guest</a></li>
+							</ul>
+						</div>
+					</section>
 
-    <header class="alt" id="header">
-      <h1><a href="index.html">Gurvich Museum</a>
-      </h1>
+					<div id="modal" class="popupContainer" style="display:none;">
+						<header class="popupHeader">
+							<span class="header_title">Login</span>
+							<span class="modal_close"><i class="fa fa-times"></i></span>
+						</header>
 
+						<section class="popupBody">
+								<div class="user_login">
+									<body>
+								<form>
+										<label>Email / Username</label>
+										<input type="text" />
+										<br />
 
-      <nav id="nav">
-        <ul>
-          <li class="special">
-            <a class="menuToggle" href="#menu"><span>Menu</span></a>
+										<label>Password</label>
+										<input type="password" />
+										<br />
 
-            <div id="menu">
-              <ul>
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
+										<div class="checkbox">
+												<input id="remember" type="checkbox" />
+												<label for="remember">Remember me on this computer</label>
+										</div>
 
+										<div class="action_btns">
+												<div class="one_half"><a href="#" class="btn back_btn"></i> Sign Up</a></div>
+												<div class="one_half last"><a href="admin.html" class="btn btn_red">Login</a></div>
+										</div>
+								</form>
 
-                <li>
-                  <a href="admin.html">Admin</a>
-                </li>
+								<a href="#" id="forgot_password" class="forgot_password">Forgot password?</a>
+							</body>
+						</div>
 
+						</section>
+					</div>
 
-                <li>
-                  <a href="admin.html">Guest</a>
-                </li>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
 
+			</div>
 
-                <li>
-                  <a href="elements.html">Elements</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Banner -->
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/jquery.leanModal.min.js"></script>
+			<script src="assets/js/login.js"></script>
 
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
-    <section id="banner">
-      <div class="inner">
-        <h2>Museo Gurvich</h2>
-
-
-        <ul class="actions">
-          <li>
-            <a class="button special" href="#modal" id="modal_trigger">Admin</a>
-          </li>
-
-
-          <li>
-            <a class="button special" href="guest.html">Guest</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
-    <div class="popupContainer" id="modal" style="display:none;">
-      <header class="popupHeader">
-        <span class="header_title">Login</span> <span class="modal_close"><i class="fa fa-times"></i></span>
-      </header>
-
-
-      <section class="popupBody">
-        <div class="user_login">
-          <form>
-            <label>Email / Username</label> <input type="text"><br>
-            <label>Password</label> <input type="password"><br>
-
-
-            <div class="checkbox">
-              <input id="remember" type="checkbox"> <label for="remember">Remember me on this computer</label>
-            </div>
-
-
-            <div class="action_btns">
-              <div class="one_half">
-                <a class="btn back_btn" href="#">Sign Up</a>
-              </div>
-
-
-              <div class="one_half last">
-                <a class="btn btn_red" href="admin.html">Login</a>
-              </div>
-            </div>
-          </form>
-          <a class="forgot_password" href="#" id="forgot_password">Forgot password?</a>
-        </div>
-      </section>
-    </div>
-    <!-- Footer -->
-
-
-    <footer id="footer">
-      <ul class="icons">
-        <li>
-          <a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a>
-        </li>
-
-
-        <li>
-          <a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a>
-        </li>
-
-
-        <li>
-          <a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a>
-        </li>
-
-
-        <li>
-          <a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a>
-        </li>
-
-
-        <li>
-          <a class="icon fa-envelope-o" href="#"><span class="label">Email</span></a>
-        </li>
-      </ul>
-
-
-      <ul class="copyright">
-        <li>&copy; Untitled</li>
-
-
-        <li>Design: <a href="http://html5up.net">HTML5 UP</a>
-        </li>
-      </ul>
-    </footer>
-  </div>
-  
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"> </script> 
-  <script src="assets/js/jquery.scrollex.min.js"> </script> 
-  <script src="assets/js/jquery.scrolly.min.js"> </script> 
-  <script src="assets/js/skel.min.js"> </script> 
-  <script src="assets/js/util.js"> </script> 
-  <script src="assets/js/jquery.leanModal.min.js"> </script> 
-  <script src="assets/js/login.js">
-  </script> <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-   
-  <script src="assets/js/main.js">
-  </script>
-</body>
+	</body>
 </html>
