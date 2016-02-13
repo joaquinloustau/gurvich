@@ -1,0 +1,391 @@
+.user_login body {
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.checkbox > input[type="checkbox"] + label {
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 2.4em;
+  padding-right: .75em;
+  position: relative;
+  font-family: 'Source Sans Pro',sans-serif;
+  margin-bottom: 1.5em;
+  letter-spacing: normal;
+}
+
+.header_title {
+  color: #666;
+  font-family: 'Source Sans Pro',sans-serif;
+}
+
+.header_title span {
+  font-weight: 700;
+}
+
+#forgot_password {
+  display: block;
+  margin: 20px 0 10px;
+  clear: both;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ED6347;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 14px;
+  border-bottom: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 60px;
+}
+
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+
+.popupContainer {
+  position: absolute;
+  width: 330px;
+  height: auto;
+  left: 45%;
+  top: 60px;
+  background: #FFF;
+}
+
+/*#modal_trigger {
+		margin: 40px auto;
+		width: 200px;
+		display: block;
+		border: 1px solid #DDD;
+		border-radius: 4px;
+}*/
+.btn {
+  padding: 10px 20px;
+  background: #F4F4F2;
+  border-bottom: none;
+}
+
+.btn_red {
+  background: #ED6347;
+  color: #FFF;
+  border-bottom: none;
+}
+
+.btn:hover {
+  background: #E4E4E2;
+}
+
+.btn_red:hover {
+  background: #C12B05;
+}
+
+a.btn {
+  color: #666;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: none;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 14px;
+}
+
+a.btn_red {
+  color: #FFF;
+}
+
+.one_half {
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+.one_half.last {
+  width: 45%;
+  margin-left: 5%;
+}
+
+/* Popup Styles*/
+.popupHeader {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.popupHeader {
+  background: #F4F4F2;
+  position: relative;
+  padding: 10px 20px;
+  border-bottom: 1px solid #DDD;
+  font-weight: 700;
+}
+
+.popupHeader .modal_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 15px;
+  background: #E4E4E2;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.popupBody {
+  padding: 20px;
+}
+
+/* Social Login Form */
+.user_login {
+  line-height: normal;
+}
+
+.user_login .social_box {
+  display: block;
+  clear: both;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #F4F4F2;
+  overflow: hidden;
+}
+
+.user_login body,input,select,textarea {
+  color: #666;
+  font-family: "Open Sans",Helvetica,sans-serif;
+  font-size: 15pt;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.user_login > form {
+  margin: 0 0 1em;
+}
+
+.user_login > form > input {
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #DDD;
+  letter-spacing: normal;
+  font-family: "Open Sans",Helvetica,sans-serif;
+  font-size: 12pt;
+}
+
+.user_login label {
+  display: block;
+  color: #666;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 14px;
+}
+
+/*.user_login input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+}*/
+.user_login > form > label {
+  color: #666;
+  display: block;
+  font-weight: 600;
+  margin: 0 0 1em;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+
+.user_login > body {
+  color: #666;
+  display: block;
+  font-size: .9em;
+  font-weight: 600;
+  margin: 0 0 1em;
+}
+
+/*.user_login input[type="checkbox"] {
+    float: left;
+    margin-right: 5px;
+}*/
+.user_login .icon {
+  display: block;
+  width: 10px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  float: left;
+  color: #FFF;
+  font-size: 16px;
+  text-align: center;
+}
+
+.user_login .fb .icon {
+  background: #3B5998;
+}
+
+.user_login .google .icon {
+  background: #DD4B39;
+}
+
+.user_login .icon_title {
+  display: block;
+  padding: 5px 0;
+  float: left;
+  font-weight: 700;
+  font-size: 16px;
+  color: #777;
+}
+
+.user_login .social_box:hover {
+  background: #E4E4E2;
+}
+
+.user_login .social_box {
+  display: block;
+  clear: both;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #F4F4F2;
+  overflow: hidden;
+}
+
+.user_login .icon {
+  display: block;
+  width: 10px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  float: left;
+  color: #FFF;
+  font-size: 16px;
+  text-align: center;
+}
+
+.user_login .fb .icon {
+  background: #3B5998;
+}
+
+.user_login .google .icon {
+  background: #DD4B39;
+}
+
+.user_login .icon_title {
+  display: block;
+  padding: 5px 0;
+  float: left;
+  font-weight: 700;
+  font-size: 16px;
+  color: #777;
+}
+
+.user_login .social_box:hover {
+  background: #E4E4E2;
+}
+
+.centeredText {
+  text-align: center;
+  margin: 20px 0;
+  clear: both;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.action_btns {
+  clear: both;
+  overflow: hidden;
+}
+
+.action_btns a {
+  display: block;
+}
+
+/* User Login Form */
+./*user_login {
+  display: none;
+}
+
+.user_login > form > label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+.user_login input[type="text"],.user_login input[type="email"],.user_login input[type="password"] {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #DDD;
+  color: #666;
+}
+
+.user_login input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+*/
+/*.user_login .checkbox {
+  margin-bottom: 10px;
+  clear: both;
+  overflow: hidden;
+}
+
+.user_login > form > label {
+  letter-spacing: 0;
+}
+
+.user_login > form > label {
+  letter-spacing: 0;
+}
+
+*/
+.forgot_password a {
+  display: block !important;
+  margin: 20px 0 10px !important;
+  clear: both !important;
+  overflow: hidden !important;
+  text-decoration: none !important;
+  color: #ED6347 !important;
+}
+
+/* User Register Form */
+.user_register {
+  display: none;
+}
+
+.user_register label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.user_register input[type="text"],.user_register input[type="email"],.user_register input[type="password"] {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #DDD;
+  color: #666;
+}
+
+/*.user_register input[type="checkbox"] {
+		float: left;
+		margin-right: 5px;
+}*/
+/*.user_register input[type="checkbox"]+label {
+		float: left;
+}
+
+.user_register .checkbox {
+		margin-bottom: 10px;
+		clear: both;
+		overflow: hidden;
+}*/
