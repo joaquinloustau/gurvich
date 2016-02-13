@@ -18,8 +18,10 @@
     <link href="tagit.ui-zendesk.css" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.34.min.js"></script>
     <script src="assets/js/tagit.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
+    
       $(document).ready(function() {
           $("#myTags").tagit();
       });
@@ -27,14 +29,14 @@
     <script type="text/javascript">
       function showfield(name){
         if(name=='other') {
-        	document.getElementById('other').innerHTML='Other: <input type="text" name="other" />';
+          document.getElementById('other').innerHTML='Other: <input type="text" name="other" />';
         } else {
-        	document.getElementById('other').innerHTML='';
+          document.getElementById('other').innerHTML='';
         }
         if(name=='museum') {
-        	document.getElementById('floor-container').style.visibility = 'visible';
+          document.getElementById('floor-container').style.visibility = 'visible';
         } else {
-        	document.getElementById('floor-container').style.visibility = 'hidden';
+          document.getElementById('floor-container').style.visibility = 'hidden';
         }
       };
     </script>
@@ -217,6 +219,7 @@
         </ul>
       </footer>
     </div>
+
     <!-- Scripts -->
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -246,10 +249,10 @@
          });  
        }; 
       $('#other').pressEnter(function(){
-      	console.log('hit enter');
-      	$('#location option[value="user"]').text($('#other input').val());
-      	$('#location option[value="user"]').show().attr("selected", "selected");
-      	$('#other').hide();
+        console.log('hit enter');
+        $('#location option[value="user"]').text($('#other input').val());
+        $('#location option[value="user"]').show().attr("selected", "selected");
+        $('#other').hide();
       })
     </script>
   </body>
