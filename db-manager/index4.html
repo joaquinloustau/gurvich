@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<!--
+Index page for Fine Uploader UI S3 jQuery.  Used to demonstrate uploading to S3 without writing a single line
+of server-side code.
+Maintained by Widen Enterprises.
+This example:
+ - Orders a maximum 50x50 thumbnail to be displayed next to each submitted file.
+ - Creates a visible drop zone with a text background that is scrollable & restricted in height.
+ - Ensures file-related buttons all line up in the UI.
+ - Rejects files that are too large.
+ - Restricts session to 5 net uploaded files.
+ - Breaks large files up into separate chunks/requests.
+ - Utilizes Google as the identity provider.
+ - Refreshes the AWS credentials before they expire.
+ - Prompts the user to re-login before the OAuth2 bearer token from Google expires.
+ - Saves the files in the S3 bucket under a "directory" named after the signed-in user.
+Requirements:
+ - A "modern" browser (not IE9 or older)
+ - Fine Uploader S3 UI jQuery (4.2+) w/ preview and drag & drop support enabled
+ - jQuery 1.5+
+ - AWS JavaScript SDK
+ - Google+ OAuth JavaScript SDK
+ - Simple web server to server static content (HTML, JavaScript, & placeholder files)
+-->
+<head>
+    <title>S3 server-less example</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fine Uploader S3 No Server Demo">
+    <meta name="author" content="Widen">
+
+    <script type="text/template" id="qq-template">
+        <div class="qq-uploader-selector qq-uploader">
+            <div class="qq-upload-button-selector qq-upload-button">
+                <div>Select Files</div>
+            </div>
+            <div class="qq-upload-drop-area-selector uploader-drop-zone">
+                <span class="drop-zone-text">Drop Files Here</span>
+                <ul class="qq-upload-list-selector qq-upload-list">
+                    <li class="file-container">
+                        <div class="qq-progress-bar-container-selector">
+                            <div class="qq-progress-bar-selector qq-progress-bar"></div>
+                        </div>
+                        <div class="file-info">
+                            <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
+                            <img class="qq-thumbnail-selector" qq-max-size="50" qq-server-scale>
+                            <span class="qq-upload-file-selector qq-upload-file"></span>
+                            <span class="qq-upload-size-selector qq-upload-size"></span>
+                        </div>
+                        <button class="qq-upload-cancel-selector qq-upload-cancel" href="#">Cancel</button>
+                        <button class="qq-upload-retry-selector qq-upload-retry" href="#">Retry</button>
+                        <span class="qq-upload-status-text-selector qq-upload-status-text"></span>
+                        <a class="view-btn" target="_blank" style="display: none;">
+                            <input type="button" value="View">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <span class="qq-drop-processing-selector qq-drop-processing">
+                <span>Processing dropped files...</span>
+                <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
+            </span>
+        </div>
+    </script>
+
+    <script>
+        var s3DemoGlobals = {};
+    </script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href='//fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+    <link href="fineuploader-4.2.1.min.css" rel='stylesheet' type='text/css'>
+    <link href="custom.css" rel='stylesheet' type='text/css'>
+
+    </head>
+<body>
+    <div class="wrapper">
+        <a href="http://fineuploader.com"><img style="display:block; margin-left: auto; margin-right: auto;" src="https://raw.github.com/Widen/fine-uploader/gh-pages/img/fineuploader-header-logo.png" /></a>
+        <br/>
+
+        <h2 class="demo-title">Upload files to Amazon S3 - No server-side code required</h2>
+
+                      <span
+                        class="g-signin"
+                        data-callback="s3GoogleOauthHandler"
+                        data-clientid="932310502780-qioh5co92p5dhk010rmi6vjk9dnotcnh.apps.googleusercontent.com"
+                        data-cookiepolicy="single_host_origin"
+                        data-requestvisibleactions="http://schemas.google.com/AddActivity"
+                        data-scope="https://www.googleapis.com/auth/plus.login"
+                        data-approvalprompt="force">
+                      </span>
+         
+
+        <div id="uploader"></div>
+
+        <hr>
+
+        <h3>Additional links:</h3>
+
+        <p>
+            <ul>
+                <li><a href="https://github.com/Widen/fine-uploader-examples/tree/master/src/s3-no-server">Source code for this demo</a></li>
+                <li><a href="http://wp.me/p3FpYP-9w">Blog post describing this demo</a></li>
+                <li><a href="http://docs.fineuploader.com/features/no-server-uploads.html">Client-side signing feature documentation</a></li>
+            </ul>
+        </p>
+    </div>
+
+    <footer class="footer">
+    </footer>
+</body>
+</html>
