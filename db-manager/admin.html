@@ -16,6 +16,10 @@
     <script src="firebase-admin.js"></script>
     <link href="jquery.tagit.css" rel="stylesheet" type="text/css">
     <link href="tagit.ui-zendesk.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/fineuploader-4.2.1.min.css" rel='stylesheet' type='text/css'>
+    <link href="assets/css/custom.css" rel='stylesheet' type='text/css'>
+
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.34.min.js"></script>
@@ -38,6 +42,43 @@
         	document.getElementById('floor-container').style.visibility = 'hidden';
         }
       };
+    </script>
+    <script>
+        var s3DemoGlobals = {};
+    </script>
+
+     <script type="text/template" id="qq-template">
+        <div class="qq-uploader-selector qq-uploader">
+            <div class="qq-upload-button-selector qq-upload-button">
+                <div>Select Files</div>
+            </div>
+            <div class="qq-upload-drop-area-selector uploader-drop-zone">
+                <span class="drop-zone-text">Drop Files Here</span>
+                <ul class="qq-upload-list-selector qq-upload-list">
+                    <li class="file-container">
+                        <div class="qq-progress-bar-container-selector">
+                            <div class="qq-progress-bar-selector qq-progress-bar"></div>
+                        </div>
+                        <div class="file-info">
+                            <span class="qq-upload-spinner-selector qq-upload-spinner"></span>
+                            <img class="qq-thumbnail-selector" qq-max-size="50" qq-server-scale>
+                            <span class="qq-upload-file-selector qq-upload-file"></span>
+                            <span class="qq-upload-size-selector qq-upload-size"></span>
+                        </div>
+                        <button class="qq-upload-cancel-selector qq-upload-cancel" href="#">Cancel</button>
+                        <button class="qq-upload-retry-selector qq-upload-retry" href="#">Retry</button>
+                        <span class="qq-upload-status-text-selector qq-upload-status-text"></span>
+                        <a class="view-btn" target="_blank" style="display: none;">
+                            <input type="button" value="View">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <span class="qq-drop-processing-selector qq-drop-processing">
+                <span>Processing dropped files...</span>
+                <span class="qq-drop-processing-spinner-selector qq-drop-processing-spinner"></span>
+            </span>
+        </div>
     </script>
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <!--[if lte IE 8]>
@@ -74,6 +115,24 @@
         <section class="wrapper style5">
           <div class="inner">
             <section>
+                <div class="row-fluid">
+            <div class="span4">
+                <div class="sign-in-buttons">
+                    <!-- Google sign-in button -->
+                    <div id="google-signin" class="signin-button" style="position:relative; top:18px;">
+                      <span
+                        class="g-signin"
+                        data-callback="s3GoogleOauthHandler"
+                        data-clientid="213586927563-m61dkk5t9g5vl3drc3oe70978kvdgsds.apps.googleusercontent.com"
+                        data-cookiepolicy="single_host_origin"
+                        data-requestvisibleactions="http://schemas.google.com/AddActivity"
+                        data-scope="https://www.googleapis.com/auth/plus.login"
+                        data-approvalprompt="force">
+                      </span>
+                    </div>
+                </div>
+            </div>
+        </div>
               <h4>Form</h4>
               <form method="post" action="#" id="new-entry">
                 <div class="row uniform">
@@ -185,9 +244,7 @@
                 <div class="row uniform">
                   <div class="12u$">
                     <div>Photo Upload</div>
-                    <ul class="actions">
-                      <li><input type="file" value="Upload File" /></li>
-                    </ul>
+                    <div id="uploader"></div>
                   </div>
                 </div>
                 <div class="row uniform">
@@ -219,6 +276,8 @@
       </footer>
     </div>
     <!-- Scripts -->
+
+
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
@@ -253,5 +312,12 @@
       	$('#other').hide();
       })
     </script>
+
+    <!-- Scripts required for this demo -->
+    <script src="assets/js/s3.jquery.fineuploader-4.2.1.min.js"></script>
+    <script src="assets/js/aws-sdk-glue.js"></script>
+    <script src="assets/js/google-auth.js"></script>
+    <script src="assets/js/fineuploader-glue.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.0.0-rc4.min.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
  * and asks AWS for new credentials before those expire.
  */
 $(function() {
-    var bucketUrl = "https://fineuploader-s3-client-demo-uploads.s3.amazonaws.com",
+    var bucketUrl = "https://gurvich-assets.s3.amazonaws.com",
         updateCredentials = function(error, data) {
             if (!error) {
                 $('#uploader').fineUploaderS3("setCredentials", s3DemoGlobals.getFuCredentials(data));
@@ -27,7 +27,7 @@ $(function() {
                 var filename = this.getName(id),
                     uuid = this.getUuid(id);
 
-                return qq.format("{}/{}.{}", s3DemoGlobals.userName, uuid, qq.getExtension(filename));
+                return qq.format("{}.{}", uuid, qq.getExtension(filename));
             }
         },
         chunking: {
@@ -43,8 +43,8 @@ $(function() {
         },
         thumbnails: {
             placeholders: {
-                notAvailablePath: "not_available-generic.png",
-                waitingPath: "waiting-generic.png"
+                notAvailablePath: "assets/css/images/not_available-generic.png",
+                waitingPath: "assets/css/images/waiting-generic.png"
             }
         }
     })
