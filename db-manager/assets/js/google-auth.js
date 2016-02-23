@@ -17,7 +17,7 @@ $(function() {
 
                 // Get S3 credentials
                 s3DemoGlobals.assumeRoleWithWebIdentity({
-                    roleArn: "arn:aws:iam::776099607611:role/demo-s3-noserver-google",
+                    roleArn: "arn:aws:iam::317554616664:role/access-to-s3-per-user",
                     idToken: authResult.id_token
                 });
 

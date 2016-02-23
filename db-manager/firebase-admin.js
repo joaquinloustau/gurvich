@@ -19,7 +19,14 @@ function submitToFirebase(evt) {
 	var foor = $('#floor').val();
 	var tags = $('#myTags').tagit('assignedTags');
 	var notes = $('#notes').val();
-	var photo = $('#photo').text();
+
+
+	var photos = document.getElementsByClassName('view-btn');
+	var links = [];
+
+	for (i = 0; i < photos.length; i++) {
+		links.push(photos[i].getAttribute('href'))
+	}
 
 	if (collection) {
 		url += '/' + $('#collection').val().toLowerCase();
@@ -42,7 +49,8 @@ function submitToFirebase(evt) {
 		location: location,
 		floor: floor, 
 		tags: tags, 
-		notes: notes
+		notes: notes,
+		photos: links
 		// Photo: photo,
 	});
 	evt.preventDefault();
