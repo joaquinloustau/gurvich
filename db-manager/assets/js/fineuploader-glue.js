@@ -81,7 +81,9 @@ $(function() {
 
     $(document).on("tokenExpired.s3Demo", hideUploader);
     $(document).on("tokenReceived.s3Demo", function() {
+        $("#new-entry").css("visibility", "visible");
         $("#uploader").show();
+
     });
     $(document).trigger("tokenExpired.s3Demo");
 });

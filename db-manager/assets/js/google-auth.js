@@ -62,7 +62,7 @@ $(function() {
 
     $(document).on("tokenExpired.s3Demo", showButton);
     $(document).on("tokenReceived.s3Demo", function() {
-        $("#google-signin").hide();
+        $("#user_login").css('display','none');
     });
 
 });

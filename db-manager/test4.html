@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Gurvich</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/login.css" />
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		 <meta name="google-signin-client_id" content="213586927563-m61dkk5t9g5vl3drc3oe70978kvdgsds.apps.googleusercontent.com">
+	</head>
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Gurvich Museum</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+									<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="admin.html">Admin</a></li>
+											<li><a href="admin.html">Guest</a></li>
+											<li><a href="elements.html">Elements</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Museo Gurvich</h2>
+							<ul class="actions">
+								<li><a href="#modal" id="modal_trigger" class="button special">Admin</a></li>
+								<li><a href="guest.html" class="button special">Guest</a></li>
+							</ul>
+						</div>
+					</section>
+
+					<div id="modal" class="popupContainer" style="display:none;">
+						<header class="popupHeader">
+							<span class="header_title">Login</span>
+							<span class="modal_close"><i class="fa fa-times"></i></span>
+						</header>
+
+						<section class="popupBody">
+							<div class="user_login">
+								<body>	
+									<form>
+										<label>Login with your Google credentials. If you would like to request admin access please <a href="mailto:joaquinloustau@gmail.com?Subject=Request%20for%20Admin%20Credentials" target="_top">contact us.</a></label>
+										<div id="my-signin2">
+										<span
+                        class="g-signin"
+                        data-callback="s3GoogleOauthHandler"
+                        data-clientid="213586927563-m61dkk5t9g5vl3drc3oe70978kvdgsds.apps.googleusercontent.com"
+                        longtitle=true
+                        data-cookiepolicy="single_host_origin"
+                        data-requestvisibleactions="http://schemas.google.com/AddActivity"
+                        data-scope="https://www.googleapis.com/auth/plus.login"
+                        data-approvalprompt="force">
+                      </span></div>
+								</form>
+							</body>
+						</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/jquery.leanModal.min.js"></script>
+			<script src="assets/js/login.js"></script>
+			  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+
+
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
