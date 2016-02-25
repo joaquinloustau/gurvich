@@ -111,15 +111,15 @@ IMG
 body
 {
     background-color: #FEFEFC;
-    padding: 40px 0;
-}
+/*    padding: 40px 0;
+*/}
 
 a
 {
     color: #0088CC;
     text-decoration: none;
-    font-size: 14px;
-}
+/*    font-size: 14px;
+*/}
 
 a:hover
 {
