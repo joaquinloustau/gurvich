@@ -166,7 +166,7 @@
                     <input type="text" name="demo-name" id="title" value="" placeholder="Title" />
                   </div>
                   <div class="6u 12u$(xsmall)">
-                    <input type="text" name="demo-name" id="author" value="José Gurvich" placeholder="Author" />
+                    <input type="text" name="demo-name" id="author" value="" placeholder="Author" />
                   </div>
                   <div class="6u 12u$(xsmall)">
                     <input type="text" name="demo-name" id="date" value="" placeholder="Date" />
@@ -294,6 +294,12 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
+    <script>
+      $('#author').click(function() {
+        console.log('inside loop');
+        $('#author').val("José Gurvich");
+      });
+    </script>
     <script>
       $('#new-entry').on('keyup keypress', function(e) {
       var keyCode = e.keyCode || e.which;
