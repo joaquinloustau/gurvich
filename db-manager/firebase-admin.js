@@ -4,7 +4,7 @@ var url ="https://popping-heat-3599.firebaseio.com/obras";
 function submitToFirebase(evt) {
 
 	url ="https://popping-heat-3599.firebaseio.com/obras"
-
+	var form = document.getElementById('new-entry');
 	var collection = $('#collection').val();
 	var title = $('#title').val();
 	var author = $('#author').val();
@@ -42,6 +42,8 @@ function submitToFirebase(evt) {
 		title: title, 
 		author: author, 
 		date: date,
+		technique: technique, 
+		medium: medium,
 		width: width,
 		height: height,
 		depth: depth, 
@@ -53,8 +55,8 @@ function submitToFirebase(evt) {
 		photos: links
 		// Photo: photo,
 	});
+	form.reset();
 	evt.preventDefault();
-
 }
 
 window.onload = function () {
