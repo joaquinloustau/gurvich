@@ -56,6 +56,7 @@ function submitToFirebase(evt) {
 		// Photo: photo,
 	});
 	form.reset();
+	$('ul.qq-upload-list-selector.qq-upload-list').empty();
 	evt.preventDefault();
 }
 
