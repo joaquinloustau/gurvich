@@ -57,6 +57,7 @@ function submitToFirebase(evt) {
 	});
 	form.reset();
 	$('ul.qq-upload-list-selector.qq-upload-list').empty();
+	$('li.tagit-choice.ui-widget-content.ui-state-default.ui-corner-all.tagit-choice-editable').remove()
 	evt.preventDefault();
 }
 
