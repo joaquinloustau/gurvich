@@ -16,7 +16,7 @@ function submitToFirebase(evt) {
 	var depth = $('#depth').val();
 	var onDisplay = $('#demo-copy').is(':checked');
 	var location = $('#location').val();
-	var foor = $('#floor').val();
+	var floor = $('#floor').val();
 	var tags = $('#myTags').tagit('assignedTags');
 	var notes = $('#notes').val();
 
