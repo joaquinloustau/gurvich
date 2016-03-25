@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD44462C1CA5C80B0010639C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD44462B1CA5C80B0010639C /* AppDelegate.swift */; };
+		FD44462E1CA5C80B0010639C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD44462D1CA5C80B0010639C /* ViewController.swift */; };
+		FD4446311CA5C80B0010639C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD44462F1CA5C80B0010639C /* Main.storyboard */; };
+		FD4446331CA5C80B0010639C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4446321CA5C80B0010639C /* Images.xcassets */; };
+		FD4446361CA5C80B0010639C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4446341CA5C80B0010639C /* LaunchScreen.xib */; };
+		FD4446421CA5C80B0010639C /* Gurvich_MuseumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4446411CA5C80B0010639C /* Gurvich_MuseumTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD44463C1CA5C80B0010639C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD44461E1CA5C80B0010639C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD4446251CA5C80B0010639C;
+			remoteInfo = "Gurvich Museum";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD4446261CA5C80B0010639C /* Gurvich Museum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gurvich Museum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD44462A1CA5C80B0010639C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD44462B1CA5C80B0010639C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD44462D1CA5C80B0010639C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD4446301CA5C80B0010639C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD4446321CA5C80B0010639C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FD4446351CA5C80B0010639C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FD44463B1CA5C80B0010639C /* Gurvich MuseumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gurvich MuseumTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD4446401CA5C80B0010639C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD4446411CA5C80B0010639C /* Gurvich_MuseumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gurvich_MuseumTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD4446231CA5C80B0010639C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD4446381CA5C80B0010639C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD44461D1CA5C80B0010639C = {
+			isa = PBXGroup;
+			children = (
+				FD4446281CA5C80B0010639C /* Gurvich Museum */,
+				FD44463E1CA5C80B0010639C /* Gurvich MuseumTests */,
+				FD4446271CA5C80B0010639C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD4446271CA5C80B0010639C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD4446261CA5C80B0010639C /* Gurvich Museum.app */,
+				FD44463B1CA5C80B0010639C /* Gurvich MuseumTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD4446281CA5C80B0010639C /* Gurvich Museum */ = {
+			isa = PBXGroup;
+			children = (
+				FD44462B1CA5C80B0010639C /* AppDelegate.swift */,
+				FD44462D1CA5C80B0010639C /* ViewController.swift */,
+				FD44462F1CA5C80B0010639C /* Main.storyboard */,
+				FD4446321CA5C80B0010639C /* Images.xcassets */,
+				FD4446341CA5C80B0010639C /* LaunchScreen.xib */,
+				FD4446291CA5C80B0010639C /* Supporting Files */,
+			);
+			path = "Gurvich Museum";
+			sourceTree = "<group>";
+		};
+		FD4446291CA5C80B0010639C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD44462A1CA5C80B0010639C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD44463E1CA5C80B0010639C /* Gurvich MuseumTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD4446411CA5C80B0010639C /* Gurvich_MuseumTests.swift */,
+				FD44463F1CA5C80B0010639C /* Supporting Files */,
+			);
+			path = "Gurvich MuseumTests";
+			sourceTree = "<group>";
+		};
+		FD44463F1CA5C80B0010639C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD4446401CA5C80B0010639C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD4446251CA5C80B0010639C /* Gurvich Museum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD4446451CA5C80B0010639C /* Build configuration list for PBXNativeTarget "Gurvich Museum" */;
+			buildPhases = (
+				FD4446221CA5C80B0010639C /* Sources */,
+				FD4446231CA5C80B0010639C /* Frameworks */,
+				FD4446241CA5C80B0010639C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gurvich Museum";
+			productName = "Gurvich Museum";
+			productReference = FD4446261CA5C80B0010639C /* Gurvich Museum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD44463A1CA5C80B0010639C /* Gurvich MuseumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD4446481CA5C80B0010639C /* Build configuration list for PBXNativeTarget "Gurvich MuseumTests" */;
+			buildPhases = (
+				FD4446371CA5C80B0010639C /* Sources */,
+				FD4446381CA5C80B0010639C /* Frameworks */,
+				FD4446391CA5C80B0010639C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD44463D1CA5C80B0010639C /* PBXTargetDependency */,
+			);
+			name = "Gurvich MuseumTests";
+			productName = "Gurvich MuseumTests";
+			productReference = FD44463B1CA5C80B0010639C /* Gurvich MuseumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD44461E1CA5C80B0010639C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					FD4446251CA5C80B0010639C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					FD44463A1CA5C80B0010639C = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = FD4446251CA5C80B0010639C;
+					};
+				};
+			};
+			buildConfigurationList = FD4446211CA5C80B0010639C /* Build configuration list for PBXProject "Gurvich Museum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD44461D1CA5C80B0010639C;
+			productRefGroup = FD4446271CA5C80B0010639C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD4446251CA5C80B0010639C /* Gurvich Museum */,
+				FD44463A1CA5C80B0010639C /* Gurvich MuseumTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD4446241CA5C80B0010639C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4446311CA5C80B0010639C /* Main.storyboard in Resources */,
+				FD4446361CA5C80B0010639C /* LaunchScreen.xib in Resources */,
+				FD4446331CA5C80B0010639C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD4446391CA5C80B0010639C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD4446221CA5C80B0010639C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD44462E1CA5C80B0010639C /* ViewController.swift in Sources */,
+				FD44462C1CA5C80B0010639C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD4446371CA5C80B0010639C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4446421CA5C80B0010639C /* Gurvich_MuseumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD44463D1CA5C80B0010639C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD4446251CA5C80B0010639C /* Gurvich Museum */;
+			targetProxy = FD44463C1CA5C80B0010639C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD44462F1CA5C80B0010639C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD4446301CA5C80B0010639C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD4446341CA5C80B0010639C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD4446351CA5C80B0010639C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD4446431CA5C80B0010639C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD4446441CA5C80B0010639C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD4446461CA5C80B0010639C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Gurvich Museum/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD4446471CA5C80B0010639C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Gurvich Museum/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FD4446491CA5C80B0010639C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Gurvich MuseumTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gurvich Museum.app/Gurvich Museum";
+			};
+			name = Debug;
+		};
+		FD44464A1CA5C80B0010639C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Gurvich MuseumTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gurvich Museum.app/Gurvich Museum";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD4446211CA5C80B0010639C /* Build configuration list for PBXProject "Gurvich Museum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD4446431CA5C80B0010639C /* Debug */,
+				FD4446441CA5C80B0010639C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD4446451CA5C80B0010639C /* Build configuration list for PBXNativeTarget "Gurvich Museum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD4446461CA5C80B0010639C /* Debug */,
+				FD4446471CA5C80B0010639C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD4446481CA5C80B0010639C /* Build configuration list for PBXNativeTarget "Gurvich MuseumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD4446491CA5C80B0010639C /* Debug */,
+				FD44464A1CA5C80B0010639C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD44461E1CA5C80B0010639C /* Project object */;
+}
